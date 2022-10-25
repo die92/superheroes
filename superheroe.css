@@ -2,6 +2,12 @@
     box-sizing: border-box;
     margin: 0;
 }
+body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-size: cover;
+}    
+
+
 .descuentos{
     color: black;
     background-color: aqua;
@@ -61,7 +67,13 @@
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-
+}
+.boton:hover{
+    position: relative;
+    top: 5px;
+    background-color: rgb(5, 136, 251);
+    opacity: 90%;
+    transition: 0.5s;
 }
 .caja_batman h2{
     position: relative;
@@ -119,9 +131,14 @@
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-
 }
-
+.boton2:hover{
+    position: relative;
+    top: 5px;
+    background-color: rgb(5, 136, 251);
+    opacity: 90%;
+    transition: 0.5s;
+}
 .caja_batman2{
     height: 480px;
     width: 350px;
@@ -168,7 +185,13 @@
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-
+}
+.boton3:hover{
+    position: relative;
+    top: 5px;
+    background-color: rgb(5, 136, 251);
+    opacity: 90%;
+    transition: 0.5s;
 }
 .derechos{
     position: relative;
