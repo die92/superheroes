@@ -201,7 +201,9 @@ body{
     background-color: blue;
     margin: 25px 0px;
 }
-
+.derechos h5{
+    margin-left: 10px;
+}
 @media (max-width:480px){
     .heroes{
         display: flex;
