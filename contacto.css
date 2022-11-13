@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 115vh;
+    font-family: Arial, Helvetica, sans-serif;
+}    
+
+.descuentos{
+    color: black;
+    background-color: aqua;
+    padding: 5px;
+}
+.titulo{
+    color: black;
+    background-color: blue;
+    height: 60px;
+    padding: 20px;
+    box-shadow: 0px 8px  rgba(4, 4, 4, 0.149)
+    
+}
+.derechos{
+    
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    color: white;
+    background-color: blue;
+    
+}
+.derechos h5{
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/* aca empieza lo principal */
+
+
+.principal{
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.global{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    height: 90%;
+    width: 60%;
+    background-color: blue;
+    border-radius: 15px;
+    margin:20px;
+    color: white;
+
+}
+
+/* este es lado derecho */
+
+.especie{
+    display: flex;
+    flex-direction: column;
+    margin-right: 85px;
+    justify-content: center;
+}
+
+.tipo{
+    margin-bottom: 15px;
+}
+.tipo input{
+    width: 300px;
+    height: 40px;
+}
+.archivo{
+    margin-bottom: 15px;
+}
+.poderes{
+    margin-bottom: 15px;
+}
+.personaje{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+/* esto es para el lado izquierdo */
+.nombre{
+    display: flex;
+    flex-direction: column;
+    margin-left: 85px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 5px;
+}
+.texto{
+    margin-bottom: 15px;
+    position: static;
+}
+.dia{
+    margin-bottom: 15px;
+}
+.tarea textarea{
+    resize: none;
+    border-style: none;
+    border-radius:10px ;
+}
+.texto input{
+    width: 300px;
+    height: 40px;
+}
+.dia input{
+    width: 300px;
+    height: 40px;
+}
+/* esto es para los input de los dos lados */ 
+.nombre input {
+    border-radius: 10px;
+    border-style: none;
+}
+.especie input{
+    border-radius: 10px;
+    border-style: none; 
+}
+/* esto para el boton de añadir */
+.boton{
+    position: absolute;
+    top: 95%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 230px;
+    background-color: rgb(6, 215, 215);
+    border-radius: 10px;
+}
+.boton .añadir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black; 
+    
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    
+    <header>
+        <h6 class="descuentos">descuentos del 20%</h6>
+        <h2 class="titulo">Heroes</h2>
+    </header>
+<section class="principal">
+    <div class="global">
+        <!-- lado izquierdo -->
+        <div class="nombre">
+            <div class="texto">
+                <label for="name">*Nombre</label><br>
+                <input type="text" name="nombre" id="nombre"><br>
+            </div>
+            <div class="dia">
+                <label for="fecha">Fecha</label><br>
+                <input type="date" name="fecha" id="fecha"><br>
+            </div>
+            <div class="tarea">
+                <textarea name="comentario" id="comentario" cols="38" rows="10"></textarea>
+            </div>
+        </div>
+        <!-- lado derecho -->
+        <div class="especie">
+            <div class="tipo">
+                <label for="especie">*Especie</label><br>
+                <input type="text" name="especie" id="especie"><br>
+            </div>
+            <div class="archivo">
+                <label for="archivo">Agregar foto</label><br>
+                <input type="file" name="archivo" id="archivo"><br>
+            </div>  
+            <div class="poderes">
+                <label for="poderes">Poderes</label><br>
+                <label for="volar">
+                <input type="checkbox" name="poderes" id="volar" value="volar">Volar
+                </label><br>
+                <label for="super inteligencia">
+                <input type="checkbox" name="poderes" id="super inteligencia" value="super inteligencia">Super inteligencia
+                </label><br>
+                <label for="vista de rayos laser">
+                <input type="checkbox" name="poderes" id="vista de rayos laser" value="vista de rayos laser">Vista de rayos laser
+                </label><br>
+                <label for="billetera gorda">
+                <input type="checkbox" name="poderes" id="billetera gorda" value="billetera gorda">Billetera gorda
+                </label><br>
+            </div>
+            <hr>
+            <div class="personaje">
+                <label for="personaje">Tipo de personaje</label><br>
+                <label for="hero">
+                <input type="radio" name="hero" id="hero" value="heroe/heroina" >Heroe / Heroina
+                </label><br>
+                <label for="villano">
+                <input type="radio" name="hero" id="villano" value="villano/villana">Villano / Villana
+            </label>
+            </div>
+        </div>
+        <div class="boton">
+            <a href="#" class="añadir"><h3>Añadir</h3></a>
+        </div>
+        
+    </div>
+    
+</section>
+    
+
+    <footer class="derechos">
+        <h5>todos losderechos reservados</h5>
+    </footer>
+</body>
+</html>

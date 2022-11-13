@@ -193,6 +193,23 @@ body{
     opacity: 90%;
     transition: 0.5s;
 }
+.boton_siguiente{
+    position: relative;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+}
+.boton_siguiente a{
+    color: white;
+    text-decoration: none;
+}
+
 .derechos{
     position: relative;
     justify-content: space-between;
