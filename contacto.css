@@ -69,6 +69,7 @@ body{
     flex-direction: column;
     margin-right: 85px;
     justify-content: center;
+
 }
 
 .tipo{
@@ -146,4 +147,60 @@ body{
     color: black; 
     
 
+}
+@media(max-width:760px){
+    .descuentos{
+        color: black;
+        background-color: aqua;
+        padding: 5px;
+    }
+    .titulo{
+        color: black;
+        background-color: blue;
+        height: 10vh;
+        width: 100vw;
+        
+        box-shadow: 0px 8px  rgba(4, 4, 4, 0.149)
+        
+    }
+    .global{
+        width: 90%;
+        height: 90%;
+    }
+    .tipo input{
+        width: 40vw;
+        margin: 5px;
+        height: 8vh;
+    }
+    .archivo input{
+        width: 40vw;
+        margin: 5px;
+       
+
+    }
+    .texto input{
+        width: 40vw;
+        margin: 5px;
+        height: 8vh;
+    }
+    .dia input{
+        width: 40vw;
+        margin: 5px;
+        height: 8vh;
+    }
+    .tarea textarea{
+        width: 40vw;
+        margin: 5px;
+    }
+    .boton{
+        position: absolute;
+        top: 100%;
+        display: flex;
+        justify-content: center;
+        height: 8vh;
+        width: 20vw;
+        background-color: rgb(6, 215, 215);
+        border-radius: 10px;
+
+}
 }
