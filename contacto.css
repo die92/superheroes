@@ -20,9 +20,20 @@ body{
     background-color: blue;
     height: 60px;
     padding: 20px;
-    box-shadow: 0px 8px  rgba(4, 4, 4, 0.149)
-    
+    box-shadow: 0px 8px  rgba(4, 4, 4, 0.149);
+    /* animation-name: titulo;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s; */
 }
+.titulo h6{
+    animation-name: titulo;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+
 .derechos{
     
     justify-content: space-between;
@@ -47,160 +58,235 @@ body{
     display: flex;
     justify-content: center; 
     align-items: center;
+
 }
 
-.global{
+.principal .global{
+    position: relative;
     display: flex;
-    align-items:center;
-    justify-content:space-around;
+    align-items: center;
+    justify-content: center;
     height: 90%;
     width: 60%;
     background-color: blue;
     border-radius: 15px;
     margin:20px;
     color: white;
-
+    
 }
 
-/* este es lado derecho */
-
-.especie{
-    display: flex;
-    flex-direction: column;
-    margin-right: 85px;
-    justify-content: center;
-
-}
-
-.tipo{
-    margin-bottom: 15px;
-}
-.tipo input{
-    width: 300px;
-    height: 40px;
-}
-.archivo{
-    margin-bottom: 15px;
-}
-.poderes{
-    margin-bottom: 15px;
-}
-.personaje{
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-/* esto es para el lado izquierdo */
-.nombre{
-    display: flex;
-    flex-direction: column;
-    margin-left: 85px;
-    align-items: center;
-    justify-content: center;
+/* este es lado izquierdo */
+.global .nombre{
     position: relative;
-    bottom: 5px;
-}
-.texto{
-    margin-bottom: 15px;
-    position: static;
-}
-.dia{
-    margin-bottom: 15px;
-}
-.tarea textarea{
-    resize: none;
-    border-style: none;
-    border-radius:10px ;
-}
-.texto input{
-    width: 300px;
-    height: 40px;
-}
-.dia input{
-    width: 300px;
-    height: 40px;
-}
-/* esto es para los input de los dos lados */ 
-.nombre input {
-    border-radius: 10px;
-    border-style: none;
-}
-.especie input{
-    border-radius: 10px;
-    border-style: none; 
-}
-/* esto para el boton de añadir */
-.boton{
-    position: absolute;
-    top: 95%;
+    left: 25px;
+    bottom: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 50px;
-    width: 230px;
-    background-color: rgb(6, 215, 215);
-    border-radius: 10px;
-}
-.boton .añadir{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black; 
+    height: 100%;
+    width: 35%;
     
 
 }
-@media(max-width:760px){
-    .descuentos{
-        color: black;
-        background-color: aqua;
-        padding: 5px;
-    }
-    .titulo{
-        color: black;
-        background-color: blue;
-        height: 10vh;
-        width: 100vw;
-        
-        box-shadow: 0px 8px  rgba(4, 4, 4, 0.149)
-        
-    }
-    .global{
-        width: 90%;
-        height: 90%;
-    }
-    .tipo input{
-        width: 40vw;
-        margin: 5px;
-        height: 8vh;
-    }
-    .archivo input{
-        width: 40vw;
-        margin: 5px;
-       
 
+.global .nombre input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-style: none;
+}
+.global .nombre textarea{
+    border-radius:10px ;
+    border-style: none;
+    resize: none;
+    width: 100%;
+}
+/* este es el lado derecho */
+
+.global .especie{
+    position: relative;
+    left: 90px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    
+}
+.global .especie .tipo select{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-style: none;
+}
+.global .especie .poderes{
+    margin: 10px;
+    
+}
+.global .especie .personajes{
+    margin: 10px 10px ;
+
+}
+hr{
+    margin: 15px;
+}
+/* para el boton de añadir */
+.principal .global .boton{
+    position: relative;
+    top: 200px;
+    right: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+}
+.principal .global .boton:hover{
+    height: 40px;
+    
+    background-color: black;
+    transition: 0.5s;
+}
+.principal .global .boton a{
+    color: black;
+    text-decoration:none
+}
+
+.principal .global .boton a:hover{
+    color: aqua;
+    transition: 0.5s;
+}
+
+/* diseño adptativo */
+@media(max-width:770px){
+    body{
+        height: 115vh;
     }
-    .texto input{
-        width: 40vw;
-        margin: 5px;
-        height: 8vh;
-    }
-    .dia input{
-        width: 40vw;
-        margin: 5px;
-        height: 8vh;
-    }
-    .tarea textarea{
-        width: 40vw;
-        margin: 5px;
-    }
-    .boton{
-        position: absolute;
-        top: 100%;
+    .principal{
+        position: relative;
+        left: 75px;
+        height: 100vh;
         display: flex;
         justify-content: center;
-        height: 8vh;
-        width: 20vw;
-        background-color: rgb(6, 215, 215);
-        border-radius: 10px;
+        align-items: center;
+        width: 80%;
+        
+    
+    }
+    
+    .principal .global{
+        
+        justify-content:center;
+        align-items: center;
+        height: 90%;
+        width: 100%;
+        
+    }
+        /* lado izquierdo */
+        .principal .global .nombre{
+            justify-content: center;
+            width: 35%;
+            left: 50PX;
+            
+        }
 
+    
+        .principal .global .nombre textarea{
+            width: 100%;
+            
+    } 
+        /* lado derecho */
+        .principal .global .especie{
+            width: 35%;
+            position: relative;
+            left: 60px;
+            
+            
+        }
+    
+        .especie .archivo input{
+            width: 100%;
+    }
+    .derechos h5{
+        position: relative;
+        left: 50px;
+    }
+    .descuentos h6{
+        position: relative;
+        left: 50px;
+        
+    }
+    .titulo h2{
+        position: relative;
+        left: 50px;
+    }
+    .principal .global .boton{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: 26vw;
+    }
+}
+@media (max-width:670px){
+    body{
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 177vh;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .principal{
+        height: 160vh;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+    .principal .global{
+        position: relative;
+        right: 15px;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: 80%;
+        background-color: blue;
+        border-radius: 15px;
+        margin:20px;
+        color: white;
+        
+    }
+    .principal .global .nombre {
+        position:relative;
+        margin-right: 90px;
+        margin-top: 15px;
+        width:75%;
+    }
+    .principal .global .especie{
+        position: relative;
+        left: 10px;
+        bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 85%;
+        width: 75%;
+    }
+    .principal .global .boton{
+        position:static;
+        bottom: 500px;
+        left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        height: 30px;
+        width: 120px;
+        border-radius: 10px;
 }
 }
+
